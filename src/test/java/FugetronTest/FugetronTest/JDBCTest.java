@@ -11,7 +11,6 @@ public class JDBCTest {
 	@Test
 	public void testConnection(){
 		try {
-			// DriverManager: The basic service for managing a set of JDBC drivers.
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "root");
 			if (conn!= null) {
 				System.out.print("Connection Successful!");
